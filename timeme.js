@@ -305,15 +305,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 						TimeMe.triggerUserHasReturned();
 					}
 				}, false);
-
-				window.addEventListener('blur', function () {
-					TimeMe.triggerUserHasLeftPage();
-				});
-
-				window.addEventListener('focus', function () {
-					TimeMe.triggerUserHasReturned();
-				});
-
+				
 				document.addEventListener("mousemove", function () { TimeMe.resetIdleCountdown(); });
 				document.addEventListener("keyup", function () { TimeMe.resetIdleCountdown(); });
 				document.addEventListener("touchstart", function () { TimeMe.resetIdleCountdown(); });
